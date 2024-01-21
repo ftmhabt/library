@@ -1,5 +1,6 @@
 const myLibrary = [];
 
+
 function Book(title,author,pages,isRead) {
     
   this.title=title;
@@ -13,8 +14,15 @@ Book.prototype.info = function(){
 }
 
 function addBookToLibrary() {
-  // do stuff here
+    title=prompt("enter the title");
+    author=prompt("enter the author");
+    pages=prompt("enter the pages");
+    isRead=prompt("is read or not? y/n");
+
+    myLibrary.push(new Book(title,author,pages,isRead==='y'?true:false));
+    console.table(myLibrary);
 }
+
 
 
 // const book1=new Book("Horizon","me",235,true);

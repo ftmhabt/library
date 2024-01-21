@@ -1,6 +1,90 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap');
+
 *{
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-    background-color: blanchedalmond;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+body{
+    height: 100vh;
+}
+
+h1{
+    padding-top: 1.5rem;
+    text-align: center;
+    font-weight: bold;
+}
+
+.container{
+    background-color: aqua;
+    border-radius: 1rem;
+    display: flex;
+    flex-direction: column;
+    height: 80vh;
+    width: 80%;
+    margin: 2rem auto;
+    text-align: center;
+    padding: 1rem;
+    gap:1rem;
+}
+
+.add-new{
+    padding: 0.5rem;
+    background-color: azure;
+    border-radius: 0.5rem;
+    border: 0;
+}
+
+form{
+
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(min(20vw,20vh),1fr));
+    gap: 1rem;
+    justify-items: stretch;
+    align-items: center;
+    margin-top: 0;
+}
+
+form input{
+    height: 30px;
+    border-radius: 0.5rem;
+    border: 0;
+}
+
+form div{
+    height: 30px;
+    margin: 0.2rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+form div p{
+    align-self: center;
+}
+
+form input[type="checkbox"]{
+    border-radius: 0.5rem;
+    border: 0;
+}
+
+form button{
+    height: 30px;
+    width: 30px;
+    border-radius: 0.5rem;
+    border: 0;
+}
+
+.hide{
+    display: none;
+}
+
+.list{
+    flex-grow: 1;
+    padding: 0.5rem;
+    background-color: azure;
+    border-radius: 0.5rem;
+    border: 0;
 }
