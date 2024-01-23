@@ -36,11 +36,12 @@ h1{
     background-color: azure;
     border-radius: 0.5rem;
     border: 0;
+    cursor: pointer;
 }
 
 form{
 
-    display: grid;
+    display: none;
     grid-template-columns: repeat(auto-fit,minmax(max(18vw,18vh),1fr));
     gap: 1rem;
     justify-items: stretch;
@@ -49,9 +50,15 @@ form{
 }
 
 form input{
+    padding: 8px;
     height: 30px;
     border-radius: 0.5rem;
     border: 0;
+}
+
+form input:focus{
+    outline: 0;
+    border: 1px dashed black;
 }
 
 form div{
@@ -75,10 +82,11 @@ form button{
     width: 30px;
     border-radius: 0.5rem;
     border: 0;
+    cursor: pointer;
 }
 
-.hide{
-    display: none;
+.show{
+    display: grid;
 }
 
 .list{

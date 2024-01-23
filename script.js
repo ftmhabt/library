@@ -28,3 +28,11 @@ function addBookToLibrary() {
 // const book1=new Book("Horizon","me",235,true);
 // console.log(book1.info());
 
+
+
+// display new book form button
+let displayBtn=document.querySelector('.add-new');
+let form=document.querySelector('form');
+displayBtn.addEventListener('click',()=>{
+  form.classList.add('show');
+})
