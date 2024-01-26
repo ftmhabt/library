@@ -103,8 +103,15 @@ form button{
     display: flex;
 }
 
+.book>*::-webkit-scrollbar {
+    display: none;
+  }
+
 .book>*{
     flex: 1;
     padding: 1rem;
+    overflow-x: scroll;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
 }
 
