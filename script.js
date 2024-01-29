@@ -1,6 +1,5 @@
 const myLibrary = [];
 
-
 function Book(title,author,pages,isRead) {
     
   this.title=title;
@@ -9,9 +8,11 @@ function Book(title,author,pages,isRead) {
   this.isRead=isRead;
 }
 
-Book.prototype.info = function(){
-    return `${this.title} by ${this.author}, ${this.pages} pages, ${this.isRead?"read":"not read yet"} `;
-}
+// dummy data
+myLibrary.push(new Book('Dune','Frank Herbert',253,true));
+myLibrary.push(new Book('Frankenstein','Mary Shelley',411,false));
+showLibrary();
+
 
 
 function addBookToLibrary() {
