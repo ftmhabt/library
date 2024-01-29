@@ -109,13 +109,12 @@ form button{
 
 .book{
     display: flex;
+    gap: 1rem;
+    padding: 0.5rem;
 }
-
-
 
 .book>*{
     flex: 1;
-    padding: 1rem;
     overflow-x: scroll;
 }
 

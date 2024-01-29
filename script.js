@@ -57,12 +57,19 @@ function showLibrary(){
     div.appendChild(p);
     div.appendChild(r);
 
+    // delete button
+    let delBtn=document.createElement('button');
+    div.appendChild(delBtn);
+    delBtn.addEventListener('click',function(){
+      myLibrary.splice(i, 1);
+      showLibrary();
+    })
+
     
-// change book read status
+    // change book read status
 
     r.addEventListener('change',function() {
       myLibrary[i].isRead=r.checked;
-      console.table(myLibrary);
     })
 
     
