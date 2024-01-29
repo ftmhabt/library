@@ -20,11 +20,8 @@ function addBookToLibrary() {
     pages=document.querySelector('#pages').value;
     isRead=document.querySelector('#is-read').checked;
 
-    console.log(title,author,pages,isRead);
-
     myLibrary.push(new Book(title,author,pages,isRead));
-    console.table(myLibrary);
-
+    
     showLibrary();
 }
 
@@ -41,12 +38,14 @@ function showLibrary(){
     let t= document.createElement('div');
     let a= document.createElement('div');
     let p= document.createElement('div');
-    let r= document.createElement('div');
+    let r= document.createElement('input');
+    r.type='checkbox';
+    r.name='checkbox';
     
     t.textContent=myLibrary[i].title;
     a.textContent=myLibrary[i].author;
     p.textContent=myLibrary[i].pages;
-    r.textContent=myLibrary[i].isRead;
+    r.checked=myLibrary[i].isRead;
 
     let hr=document.createElement('hr');
 
@@ -57,11 +56,20 @@ function showLibrary(){
     div.appendChild(a);
     div.appendChild(p);
     div.appendChild(r);
+
     
-    
+// change book read status
+
+    r.addEventListener('change',function() {
+      myLibrary[i].isRead=r.checked;
+      console.table(myLibrary);
+    })
+
     
   }
 }
+
+
 
 // add book to library button
 let addBtn=document.querySelector('#add');
