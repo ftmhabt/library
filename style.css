@@ -111,10 +111,27 @@ form button{
     display: flex;
     gap: 1rem;
     padding: 0.5rem;
+    align-items: center;
 }
 
-.book>*{
+.book>div{
     flex: 1;
     overflow-x: scroll;
+}
+
+.book input{
+    cursor: pointer;
+    height: 1.1rem;
+    width: 1.1rem;
+    display: block;
+    accent-color: black;
+}
+
+.book button{
+    cursor: pointer;
+    height: 1.3rem;
+    width: 1.3rem;
+    background: url('data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%2024%2024%22%3E%3Cpath%20d%3D%22M19%2C4H15.5L14.5%2C3H9.5L8.5%2C4H5V6H19M6%2C19A2%2C2%200%200%2C0%208%2C21H16A2%2C2%200%200%2C0%2018%2C19V7H6V19Z%22%20%2F%3E%3C%2Fsvg%3E');
+    border: 0;
 }
 
