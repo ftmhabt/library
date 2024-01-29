@@ -119,12 +119,14 @@ form button{
     overflow-x: scroll;
 }
 
-.book input{
+.book input,
+[type='checkbox']{
     cursor: pointer;
     height: 1.1rem;
     width: 1.1rem;
     display: block;
     accent-color: black;
+    align-self: center;
 }
 
 .book button{
