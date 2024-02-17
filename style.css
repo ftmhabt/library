@@ -137,10 +137,3 @@ form button{
     border: 0;
 }
 
-.title,
-.pages{
-    display: flex;
-    flex-direction: column;
-    color: white;
-    font-size: smaller;
-}

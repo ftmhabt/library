@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,37 +7,22 @@
     <script src="script.js" defer></script>
     <title>Library</title>
 </head>
-
 <body>
     <h1>my library</h1>
     <div class="container">
         <button class="add-new">add new book</button>
-        <form novalidate>
-
-            <div class="title">
-                <input type="text" name="title" id="title" required>
-                <span class="error-title"></span>
-            </div>
-            
+        <form>
+            <input type="text" name="title" id="title">
             <input type="text" name="author" id="author">
-
-            <div class="pages">
-                <input type="text" name="pages" id="pages" pattern="^\d+$">
-                <span class="error-pages"></span>
-            </div>
-            
+            <input type="text" name="pages" id="pages">
             <div>
                 <p>I've read this book</p><input type="checkbox" name="isRead" id="is-read">
-                <button id="add"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
-                        <title>plus</title>
-                        <path d="M19,13H13V19H11V13H5V11H11V5H13V11H19V13Z" />
-                    </svg></button>
+                <button id="add"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><title>plus</title><path d="M19,13H13V19H11V13H5V11H11V5H13V11H19V13Z" /></svg></button>
             </div>
-        </form>
+            </form>
         <div class="list">
 
         </div>
     </div>
 </body>
-
 </html>
